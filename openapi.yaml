@@ -13,7 +13,8 @@ servers:
     description: Local development server
 
 security:
-  - TeamAuth: []
+  - TeamId: []
+    ApiKey: []
 
 paths:
   /healthz:
@@ -315,14 +316,17 @@ paths:
 
 components:
   securitySchemes:
-    TeamAuth:
+    TeamId:
       type: apiKey
       in: header
       name: X-Team-Id
-      description: |
-        Team authentication requires two headers:
-        - X-Team-Id: Your team identifier
-        - X-Api-Key: API key received during registration
+      description: Team identifier
+    
+    ApiKey:
+      type: apiKey
+      in: header
+      name: X-Api-Key
+      description: API key received during registration
     
     AdminAuth:
       type: apiKey

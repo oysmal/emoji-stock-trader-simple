@@ -54,6 +54,7 @@ Bids (Buyers):   $10.00 (75 shares)   ← Best Bid
 - Learn order submission format
 - Place buy and sell limit orders
 - View orders in the order book
+- **CRITICAL**: All prices must be in increments of 0.01 (e.g., 10.50, not 10.505)
 
 ### 3. 💼 **Track Your Portfolio** (30 min)
 - Monitor cash and stock positions
