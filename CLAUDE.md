@@ -3,27 +3,7 @@
 ## Project Description
 
 A Kotlin-based automated trading bot. This project prioritizes clarity and simplicity over complex abstractions while ensuring reliable operation.
-
-## Tech Stack
-
-### Core
-
-- **Language**: Kotlin 2.4+
-- **Build Tool**: Gradle with Kotlin DSL
-- **Framework**: Ktor Client
-
-### Trading Infrastructure
-
-- **HTTP Client**: Ktor Client
-- **Serialization**: kotlinx.serialization
-- **Date/Time**: kotlinx-datetime (critical for market hours)
-- **Scheduling**: Coroutines with ticker channels
-
-### Resilience & Monitoring
-
-- **Circuit Breaker**: Resilience4k
-- **Logging**: kotlin-logging + Logback
-- **Configuration**: HOCON (application.conf)
+This entire application must be possible to build in 3 hours, so the focus should always be on simplicity and YAGNI.
 
 ## Development Process Instructions (COD Loop and sub-agents)
 
@@ -32,7 +12,6 @@ A Kotlin-based automated trading bot. This project prioritizes clarity and simpl
 **You MUST follow this development workflow for ALL coding tasks:**
 
 1. **CLARIFY Phase**
-
    - Ask clarifying questions about requirements before suggesting any code
    - Identify ambiguities in the request
    - Confirm understanding of the desired outcome
@@ -40,7 +19,6 @@ A Kotlin-based automated trading bot. This project prioritizes clarity and simpl
    - Never assume implementation details without confirmation
 
 2. **OFFER Phase**
-
    - Present 2-3 different approaches with pros/cons
    - Explain trade-offs for each option (performance, maintainability, complexity)
    - Include brief code sketches or pseudocode when helpful
@@ -124,6 +102,27 @@ When a sub-agent is in CLARIFY or OFFER phase:
 **Important 2**: <instructions>Make sure you always provide clear instructions to the sub-agent regarding when to stop and consider its task complete.</instructions>
 
 This ensures features are properly planned, implemented with Kotlin best practices, reviewed for quality, and validated for completeness.
+
+## Tech Stack
+
+### Core
+
+- **Language**: Kotlin 2.4+
+- **Build Tool**: Gradle with Kotlin DSL
+- **Framework**: Ktor Client
+
+### Trading Infrastructure
+
+- **HTTP Client**: Ktor Client
+- **Serialization**: kotlinx.serialization
+- **Date/Time**: kotlinx-datetime (critical for market hours)
+- **Scheduling**: Coroutines with ticker channels
+
+### Resilience & Monitoring
+
+- **Circuit Breaker**: Resilience4k
+- **Logging**: kotlin-logging + Logback
+- **Configuration**: HOCON (application.conf)
 
 ## Code Conventions
 
